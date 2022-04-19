@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CSC436</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string-array name="Gender">
+        <item>Select your Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Rather Not Say</item>
+
+    </string-array>
+
+
+</resources>
