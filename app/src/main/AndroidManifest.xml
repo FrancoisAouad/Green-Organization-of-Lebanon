@@ -7,11 +7,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_gologo2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_gologo2_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CSC436">
+        android:theme="@style/Theme.CSC436"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
         <activity android:name=".writeActivity"/>
         <activity android:name=".ticketActivity" />
         <activity android:name=".aboutActivity" />

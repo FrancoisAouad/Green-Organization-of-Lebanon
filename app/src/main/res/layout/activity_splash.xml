@@ -23,7 +23,7 @@
             android:id="@+id/logo"
             android:layout_gravity="bottom|center"
             android:layout_marginTop="80dp"
-            android:src="@drawable/newlogo2"
+            android:src="@drawable/newlogo2white"
             />
 
         <TextView
@@ -48,7 +48,7 @@
             android:layout_gravity="bottom"
             android:layout_marginTop="300dp"
             android:gravity="center"
-            android:text="GPL ©. All Rights Reserved"
+            android:text="GOL ©. All Rights Reserved"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />

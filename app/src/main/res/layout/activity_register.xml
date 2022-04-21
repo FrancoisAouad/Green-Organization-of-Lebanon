@@ -47,7 +47,7 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="0dp"
-                android:src="@drawable/newlogo2" />
+                android:src="@drawable/newlogo2green" />
 
             <TextView
                 android:layout_width="match_parent"
