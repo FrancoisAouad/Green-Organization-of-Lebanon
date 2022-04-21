@@ -46,7 +46,7 @@ public class profileActivity extends AppCompatActivity {
         profile_gender=findViewById(R.id.profile_gender);
         profile_phone=findViewById(R.id.profile_phone);
         tool_bar=findViewById(R.id.toolbar);
-        profile_update=findViewById(R.id.profile_update);
+
         dataref=FirebaseDatabase.getInstance().getReference("users");
        //---------------action bar setup-------------------//
 
@@ -84,7 +84,7 @@ if(snapshot.exists()){
         });
 
 
-       profile_update.setOnClickListener(new View.OnClickListener() {
+     /*  profile_update.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
 
@@ -104,7 +104,7 @@ else{
 
 
            }
-       });
+       });*/
 
 
 

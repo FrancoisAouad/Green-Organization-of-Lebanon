@@ -68,13 +68,13 @@ android:layout_marginTop="10dp"
 
 <EditText
     android:id="@+id/login_email"
-    android:layout_width="250dp"
-    android:layout_height="30dp"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
     android:layout_gravity="center"
     android:layout_marginTop="20dp"
     android:layout_marginBottom="10dp"
     android:background="@drawable/text_background"
-    android:backgroundTint="#CAEF9F"
+    android:backgroundTint="#91DD38"
     android:gravity="center"
     android:hint="Email"
     android:inputType="textEmailAddress"
@@ -83,11 +83,11 @@ android:layout_marginTop="10dp"
     />
       <EditText
           android:id="@+id/login_password"
-          android:layout_width="250dp"
-          android:layout_height="30dp"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
           android:layout_gravity="center"
           android:background="@drawable/text_background"
-          android:backgroundTint="#CAEF9F"
+          android:backgroundTint="#91DD38"
           android:gravity="center"
           android:hint="Password"
           android:inputType="textPassword"
@@ -101,28 +101,28 @@ android:layout_marginTop="10dp"
 
                 <Button
                     android:id="@+id/login_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/text_background"
-                    android:text="Sign In Now"
+                    android:text="Log In"
                     android:textAllCaps="false"
-                    android:textSize="20sp"
-                    app:backgroundTint="#CAEF9F">
+                    android:textSize="15sp"
+                    app:backgroundTint="#91DD38">
 
                 </Button>
 
                 <Button
                     android:id="@+id/login_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="220dp"
+                    android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/button_background"
                     android:text="Apply For Membership"
                     android:textAllCaps="false"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     app:backgroundTint="#448E47">
 
                 </Button>

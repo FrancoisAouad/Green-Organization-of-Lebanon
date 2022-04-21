@@ -87,57 +87,61 @@
                     android:src="@drawable/default_userimg" />
                 <EditText
                     android:id="@+id/register_name"
-                    android:layout_width="250dp"
-                    android:layout_height="30dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/text_background"
-                    android:backgroundTint="#CAEF9F"
+                    android:backgroundTint="#91DD38"
                     android:gravity="center"
                     android:hint="Full Name"
                     android:inputType="text"
                     android:textColor="@color/black"
+                    android:textStyle="bold"
                     android:textColorHint="@color/white" />
 
                 <EditText
                     android:id="@+id/register_username"
-                    android:layout_width="250dp"
-                    android:layout_height="30dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/text_background"
-                    android:backgroundTint="#CAEF9F"
+                    android:backgroundTint="#91DD38"
                     android:gravity="center"
                     android:hint="Username"
+                    android:textStyle="bold"
                     android:inputType="text"
                     android:textColor="@color/black"
                     android:textColorHint="@color/white" />
 
                 <EditText
                     android:id="@+id/register_email"
-                    android:layout_width="250dp"
-                    android:layout_height="30dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/text_background"
-                    android:backgroundTint="#CAEF9F"
+                    android:backgroundTint="#91DD38"
                     android:gravity="center"
                     android:hint="Email"
                     android:inputType="textEmailAddress"
+                    android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textColorHint="@color/white" />
 
                 <EditText
                     android:id="@+id/register_phone"
-                    android:layout_width="250dp"
-                    android:layout_height="30dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/text_background"
-                    android:backgroundTint="#CAEF9F"
+                    android:backgroundTint="#91DD38"
                     android:gravity="center"
                     android:hint="Phone"
+                    android:textStyle="bold"
                     android:inputType="phone"
                     android:textColor="@color/black"
                     android:textColorHint="@color/white" />
@@ -145,14 +149,15 @@
 
                 <Spinner
                     android:id="@+id/register_gender"
-                    android:layout_width="250dp"
-                    android:layout_height="30dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/text_background"
                     android:entries="@array/Gender"
                     android:gravity="center"
-                    app:boxStrokeColor="#CAEF9F"
+
+                    app:boxStrokeColor="#91DD38"
 
 
                     />
@@ -164,14 +169,15 @@
 
                 <EditText
                     android:id="@+id/register_password"
-                    android:layout_width="250dp"
-                    android:layout_height="30dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:background="@drawable/text_background"
-                    android:backgroundTint="#CAEF9F"
+                    android:backgroundTint="#91DD38"
                     android:gravity="center"
                     android:hint="Password"
                     android:inputType="textPassword"
+                    android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textColorHint="@color/white"
                     android:visibility="visible"
@@ -180,8 +186,8 @@
 
                 <Button
                     android:id="@+id/register_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
@@ -189,6 +195,7 @@
                     android:text="Register"
                     android:textAllCaps="false"
                     android:textSize="15sp"
+
                     app:backgroundTint="#8BC34A">
 
                 </Button>

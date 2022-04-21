@@ -80,7 +80,7 @@ userRef.addValueEventListener(new ValueEventListener() {
 
             String full_name = snapshot.child("fullname").getValue().toString();
             String user_name = snapshot.child("username").getValue().toString();
-            //String pfp = snapshot.child("profileimage").getValue().toString();
+            String profile_p = snapshot.child("profileimage").getValue().toString();
 
 
             HashMap newposts = new HashMap();
@@ -91,7 +91,7 @@ userRef.addValueEventListener(new ValueEventListener() {
             newposts.put("date", savecurrentdate);
             newposts.put("time", savecurrenttime);
             newposts.put("text", post);
-            // newposts.put("profileimage", pfp);
+            newposts.put("profileimage", profile_p);
 
             postRef.child("newposts").push().setValue(newposts).addOnCompleteListener(task ->
             {
