@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -40,7 +41,7 @@ public class registerActivity extends AppCompatActivity {
 
     Button back_button, register_button;
     EditText register_name, register_username, register_email, register_password, register_phone;
-    Spinner register_gender;
+    //Spinner register_gender;
     ProgressDialog loader;
     FirebaseAuth uAuth;
     DatabaseReference dataRef;
@@ -60,10 +61,12 @@ public class registerActivity extends AppCompatActivity {
         register_username = findViewById(R.id.register_username);
         register_email = findViewById(R.id.register_email);
         register_password = findViewById(R.id.register_password);
-        register_gender = findViewById(R.id.register_gender);
+       // register_gender = findViewById(R.id.register_gender);
         loader = new ProgressDialog(this);
         uAuth = FirebaseAuth.getInstance();
 
+//Spinner coloredSpinner=findViewById(R.id.register_gender);
+//ArrayAdapter adapter=ArrayAdapter.createFromResource(this, R.array.Gender, R.layout.spinner_color);
 
 //--------------------Back button-----------------------------//
 
@@ -94,7 +97,7 @@ public class registerActivity extends AppCompatActivity {
                 final String password = register_password.getText().toString().trim();
                 final String fullname = register_name.getText().toString().trim();
                 final String username = register_username.getText().toString().trim();
-                final String gender = register_gender.getSelectedItem().toString();
+              //  final String gender = register_gender.getSelectedItem().toString();
                 final String phone = register_phone.getText().toString().trim();
 //-----------------------send info to firebase-----------//
                 if (TextUtils.isEmpty(email)) {
@@ -124,10 +127,11 @@ public class registerActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (gender.equals("Select your Gender")) {
-                    Toast.makeText(registerActivity.this, "Select Gender", Toast.LENGTH_SHORT).show();
-                    return;
-                } else {
+              //  if (gender.equals("Select your Gender")) {
+              //      Toast.makeText(registerActivity.this, "Select Gender", Toast.LENGTH_SHORT).show();
+               //     return;
+              //  }
+                else {
                     loader.setMessage("This may take a second...");
                     loader.setCanceledOnTouchOutside(false);
                     loader.show();
@@ -148,7 +152,7 @@ public class registerActivity extends AppCompatActivity {
                                 userinfo.put("username", username);
                                 userinfo.put("phone", phone);
                                 userinfo.put("email", email);
-                                userinfo.put("gender", gender);
+                               // userinfo.put("gender", gender);
 
 
                                 dataRef.updateChildren(userinfo).addOnCompleteListener(new OnCompleteListener() {

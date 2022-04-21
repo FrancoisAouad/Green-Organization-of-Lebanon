@@ -19,8 +19,8 @@
 
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:id="@+id/profile_image"
         android:src="@drawable/default_userimg"
@@ -38,11 +38,12 @@
         android:id="@+id/profile_full_name"
         android:layout_margin="10dp"
         android:textSize="24sp"
+        android:drawableStart="@drawable/ic_id_icon"
         android:hint="Full Name"
         android:background="@drawable/profile_textviews_new"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:drawablePadding="12dp"
-        android:textAllCaps="true"
+
         android:gravity="center"
         android:textColor="@color/toolbar1"
         android:paddingEnd="12dp"
@@ -54,6 +55,7 @@
         android:id="@+id/profile_username"
         android:layout_margin="10dp"
         android:hint="Username"
+        android:drawableStart="@drawable/ic_user_icon"
         android:textSize="24sp"
         android:drawablePadding="12dp"
 android:background="@drawable/profile_textviews_new"
@@ -94,25 +96,6 @@ android:background="@drawable/profile_textviews_new"
         android:paddingStart="12dp"
         android:textColor="@color/toolbar1"
         />
-    <TextView
-        android:layout_width="match_parent"
-android:drawablePadding="12dp"
-        android:background="@drawable/profile_textviews_new"
-        android:layout_height="40dp"
-        android:id="@+id/profile_gender"
-        android:layout_margin="10dp"
-        android:textSize="24sp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:hint="Gender"
-        android:textColor="@color/toolbar1"
-        android:paddingEnd="12dp"
-        android:paddingStart="12dp"
-        />
-
-
-
-
 
 
 </LinearLayout>

@@ -43,7 +43,7 @@ public class profileActivity extends AppCompatActivity {
         profile_fullname=findViewById(R.id.profile_full_name);
         profile_username=findViewById(R.id.profile_username);
         profile_email=findViewById(R.id.profile_email);
-        profile_gender=findViewById(R.id.profile_gender);
+       // profile_gender=findViewById(R.id.profile_gender);
         profile_phone=findViewById(R.id.profile_phone);
         tool_bar=findViewById(R.id.toolbar);
 
@@ -65,7 +65,7 @@ if(snapshot.exists()){
     profile_fullname.setText(snapshot.child("fullname").getValue().toString());
     profile_username.setText(snapshot.child("username").getValue().toString());
     profile_email.setText(snapshot.child("email").getValue().toString());
-    profile_gender.setText(snapshot.child("gender").getValue().toString());
+   // profile_gender.setText(snapshot.child("gender").getValue().toString());
     profile_phone.setText(snapshot.child("phone").getValue().toString());
     if(snapshot.hasChild("profileimage")) {
 

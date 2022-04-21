@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -40,6 +41,8 @@ public class writeActivity extends AppCompatActivity {
     String savecurrentdate, savecurrenttime;
 
     //  String current_user = mauth.getCurrentUser().getUid();
+//Fix an error where we cannot send a post if the user has not selected an image
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +83,7 @@ userRef.addValueEventListener(new ValueEventListener() {
 
             String full_name = snapshot.child("fullname").getValue().toString();
             String user_name = snapshot.child("username").getValue().toString();
-            String profile_p = snapshot.child("profileimage").getValue().toString();
+           String profile_p = snapshot.child("profileimage").getValue().toString();
 
 
             HashMap newposts = new HashMap();
@@ -106,6 +109,15 @@ userRef.addValueEventListener(new ValueEventListener() {
                     Toast.makeText(writeActivity.this, "error", Toast.LENGTH_SHORT).show();
                 }
 
+               /* if(snapshot.hasChild("profileimage")) {
+
+                    Glide.with(getApplicationContext()).load(snapshot.child("profileimage").getValue().toString()).into(profile_p);
+                }else{
+
+                    profile_p.put
+                }
+
+*/
             });
 
 
