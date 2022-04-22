@@ -60,13 +60,9 @@ android:title="Profile"
     <item android:title="Settings">
         <menu>
             <group android:checkableBehavior="single">
-            <item
-                android:id="@+id/notification"
-                android:title="Notifications"
-                android:icon="@drawable/ic_notification_icon"
-                >
 
-            </item>
+
+
             <item
                 android:id="@+id/logout"
                 android:title="Logout"

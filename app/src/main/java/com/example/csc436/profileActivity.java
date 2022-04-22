@@ -26,10 +26,10 @@ import com.google.firebase.database.ValueEventListener;
 public class profileActivity extends AppCompatActivity {
      ImageView profile_image;
      TextView profile_fullname, profile_username, profile_email, profile_gender, profile_phone;
-     Toolbar tool_bar;
+    // Toolbar tool_bar;
      FirebaseAuth uAuth;
      DatabaseReference dataref;
-     Button profile_update;
+     Button profile_back;
      String update_username, update_email, update_number, update_password;
 
 
@@ -43,17 +43,32 @@ public class profileActivity extends AppCompatActivity {
         profile_fullname=findViewById(R.id.profile_full_name);
         profile_username=findViewById(R.id.profile_username);
         profile_email=findViewById(R.id.profile_email);
-       // profile_gender=findViewById(R.id.profile_gender);
+       profile_back=findViewById(R.id.profile_back);
         profile_phone=findViewById(R.id.profile_phone);
-        tool_bar=findViewById(R.id.toolbar);
+       // tool_bar=findViewById(R.id.toolbar);
 
         dataref=FirebaseDatabase.getInstance().getReference("users");
        //---------------action bar setup-------------------//
 
-        setSupportActionBar(tool_bar);
-        getSupportActionBar().setTitle("Profile");
-       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+       // setSupportActionBar(tool_bar);
+       // getSupportActionBar().setTitle("Profile");
+      // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+      //  getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
+         profile_back.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(profileActivity.this, mainActivity.class);
+                 startActivity(intent);
+             }
+         });
+
+
+
+
+
+
 //----------------display info in profile activity
 
         DatabaseReference reference= FirebaseDatabase.getInstance().getReference().child("users").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
