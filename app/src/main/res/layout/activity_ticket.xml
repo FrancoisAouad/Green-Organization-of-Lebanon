@@ -31,8 +31,8 @@
 
             <Button
                 android:id="@+id/ticket_back"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="top"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/ic_baseline_arrow_back_ios_24"
