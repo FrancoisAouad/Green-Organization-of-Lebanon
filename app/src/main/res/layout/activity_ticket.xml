@@ -36,7 +36,7 @@
                 android:layout_gravity="top"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/ic_baseline_arrow_back_ios_24"
-                app:backgroundTint="#8BC34A" />
+                app:backgroundTint="#448E47" />
 
 
 
@@ -62,7 +62,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="Send us a ticket right away in case of violation"
-                android:textColor="#F44336"
+                android:textColor="@color/toolbar1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -83,7 +83,7 @@
                     android:layout_gravity="left"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/new_register_edit_text"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="10dp"
                     android:gravity="center"
                     android:hint="City"
                     android:inputType="text"
@@ -115,7 +115,7 @@ android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/new_register_edit_text"
-                    android:gravity="center"
+                    android:gravity="left"
                     android:hint="Tell us more..."
                     android:inputType="textEmailAddress"
 
@@ -124,18 +124,21 @@ android:layout_marginLeft="20dp"
 
                 <TextView
 
-                    android:layout_width="250dp"
+                    android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/new_register_edit_text"
-
+                    android:background="@drawable/ticket_attachement_disclaimer"
+                  android:text="Add Photo Below"
                     android:gravity="center"
-                    android:hint="Add Photo Attachement Below"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
 
-                    android:inputType="phone"
-                    android:textColor="@color/black"
-                    android:textColorHint="#60000000" />
+                    android:drawableStart="@drawable/ic_arrow_down_attachement_icon"
+                    android:drawablePadding="12dp"
+                    android:drawableEnd="@drawable/ic_arrow_down_attachement_icon"
+                    android:textColor="#F44336"
+                    />
 
 
                 <ImageView
@@ -154,11 +157,12 @@ android:layout_marginLeft="20dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/button_background"
-                    android:text="Press to make a difference!"
+                    android:text="Make a difference!"
                     android:textAllCaps="false"
                     android:textSize="15sp"
+                    android:id="@+id/ticket_post"
 
-                    app:backgroundTint="#8BC34A">
+                    app:backgroundTint="#448E47">
 
                 </Button>
 

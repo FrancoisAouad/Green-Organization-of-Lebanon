@@ -58,7 +58,7 @@
                     android:layout_height="250dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/text_box"
+                    android:background="@drawable/new_register_edit_text"
 
                     android:gravity="left"
                     android:hint="Write post here..."
