@@ -105,7 +105,8 @@ android:layout_marginLeft="5dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    tools:srcCompat="@drawable/twitter_logo" />
+
+                    android:src="@drawable/twitter_logo" />
 
                 <ImageView
                     android:id="@+id/insta"
@@ -113,7 +114,7 @@ android:layout_marginLeft="5dp"
                     android:layout_height="30dp"
 
 android:layout_marginLeft="10dp"
-                    tools:srcCompat="@drawable/insta_logo" />
+                    android:src="@drawable/insta_logo" />
             </LinearLayout>
 </LinearLayout>
 

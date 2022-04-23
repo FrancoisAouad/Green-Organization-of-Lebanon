@@ -10,7 +10,7 @@
     android:orientation="vertical">
 
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="left"
@@ -20,7 +20,7 @@ android:layout_marginTop="20dp"
 
         >
 
-    </ImageView>
+    </de.hdodenhof.circleimageview.CircleImageView>
 
     <TextView
         android:id="@+id/nav_name"

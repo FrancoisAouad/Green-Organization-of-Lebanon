@@ -23,14 +23,20 @@ android:title="Profile"
         <menu>
             <group android:checkableBehavior="single">
             <item
-                android:id="@+id/activities"
-                android:title="Activities"
+                android:id="@+id/polls"
+                android:title="Polls"
                 android:icon="@drawable/ic_activities_icon"
                 >
 
+
             </item>
+                <item
+                    android:id="@+id/calendar"
+                    android:title="Calendar"
+                    android:icon="@drawable/ic_activities_icon"
+                    >
 
-
+                </item>
 
 
             <item

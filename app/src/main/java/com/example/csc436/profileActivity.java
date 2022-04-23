@@ -23,8 +23,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class profileActivity extends AppCompatActivity {
-     ImageView profile_image;
+     CircleImageView profile_image;
      TextView profile_fullname, profile_username, profile_email, profile_gender, profile_phone;
     // Toolbar tool_bar;
      FirebaseAuth uAuth;

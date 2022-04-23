@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.csc436.model.post;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -23,17 +24,21 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class mainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar tool_bar;
-
+//RecyclerView recyView;
     TextView navname, navusername, navemail;
-    ImageView nav_img;
-    DatabaseReference uRef;
-
-
+    CircleImageView nav_img;
+    DatabaseReference uRef, pRef;
+    ArrayList<post> list;
+   // myAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +50,11 @@ public class mainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(tool_bar);
         getSupportActionBar().setTitle("Home");
 
+      //  FirebaseRecyclerOptions<post> options =
+             //   new FirebaseRecyclerOptions.Builder<post>()
+                      //  .setQuery(FirebaseDatabase.getInstance().getReference().child("posts"), post.class)
+                      //  .build();
+//recyView=findViewById(R.id.post_list);
 
         drawerLayout=findViewById(R.id.drawerlayout);
         navigationView=findViewById(R.id.navigationview);
@@ -55,11 +65,60 @@ public class mainActivity extends AppCompatActivity implements NavigationView.On
       navigationView.setNavigationItemSelectedListener(this);
 
 
-
+//recyclerView=findViewById(R.id.post_list);
 
         navname=navigationView.getHeaderView(0).findViewById(R.id.nav_name);
         navusername=navigationView.getHeaderView(0).findViewById(R.id.nav_username);
         nav_img=navigationView.getHeaderView(0).findViewById(R.id.user_image);
+
+        //----------------adapter layout recycler view for posts----------------//
+
+
+    /*    FirebaseRecyclerOptions<post> options =
+                new FirebaseRecyclerOptions.Builder<post>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("posts"), post.class)
+                        .build();
+
+        adapter=new myAdapter(options);
+recyView.setAdapter(adapter);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //-----------------display user data in text views from firebase in navigation menu-----------------//
@@ -97,6 +156,63 @@ public class mainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
+     /*   pRef= FirebaseDatabase.getInstance().getReference().child("posts").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this ));
+
+        list=new ArrayList<>();
+        myAdapter1=new myAdapter(this, list);
+        recyclerView.setAdapter(myAdapter1);
+
+        pRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull  DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot: snapshot.getChildren()){
+
+                    post post2=dataSnapshot.getValue(post.class);
+                    list.add(post2);
+
+
+                }
+
+                myAdapter1.notifyDataSetChanged();
+
+
+
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull  DatabaseError error) {
+
+            }
+        });
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 //---------------------navigate from and out of the menu items activities------------//
    @Override
@@ -124,11 +240,27 @@ public class mainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(getApplicationContext(), loginActivity.class));
                 finish();
                 break;
-
+            case R.id.polls:
+                Intent intent5=new Intent(mainActivity.this, pollActivity.class);
+                startActivity(intent5);
+                break;
 
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
+
+  /*  @Override
+    protected void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
+    }
+*/
 }
