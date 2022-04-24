@@ -111,7 +111,9 @@ userRef.addValueEventListener(new ValueEventListener() {
 
                 if (task.isSuccessful()) {
                     Toast.makeText(writeActivity.this, "Post sent", Toast.LENGTH_SHORT).show();
-
+                    Intent intent = new Intent(writeActivity.this, mainActivity.class);
+                    startActivity(intent);
+                    finish();
 
                 } else {
 
@@ -127,6 +129,7 @@ userRef.addValueEventListener(new ValueEventListener() {
                 }
 
 */
+
             });
 
 

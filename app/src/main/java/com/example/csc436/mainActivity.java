@@ -11,7 +11,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -240,8 +239,8 @@ recyView.setAdapter(adapter);
                 startActivity(new Intent(getApplicationContext(), loginActivity.class));
                 finish();
                 break;
-            case R.id.polls:
-                Intent intent5=new Intent(mainActivity.this, pollActivity.class);
+            case R.id.survey:
+                Intent intent5=new Intent(mainActivity.this, surveyActivity.class);
                 startActivity(intent5);
                 break;
 

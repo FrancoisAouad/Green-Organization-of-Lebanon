@@ -142,6 +142,8 @@ Uri uri;
                            {
                                if (task.isSuccessful()) {
 
+                              //     Intent intent = new Intent(ticketActivity.this, mainActivity.class);
+                                //   startActivity(intent);
 
                                    Toast.makeText(ticketActivity.this, "Thank you for making a difference!", Toast.LENGTH_SHORT).show();
 
@@ -150,7 +152,7 @@ Uri uri;
 
                                    Toast.makeText(ticketActivity.this, "error", Toast.LENGTH_SHORT).show();
                                }
-
+                               finish();
 
                            });
 
@@ -214,6 +216,10 @@ Uri uri;
                                        }
                                    }
                                });
+
+                               Intent intent = new Intent(ticketActivity.this, mainActivity.class);
+                               startActivity(intent);
+                               finish();
                            }
 
 

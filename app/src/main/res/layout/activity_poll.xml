@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pollActivity"
+    tools:context=".surveyActivity"
     android:orientation="vertical"
     android:padding="20dp"
     android:background="#7bb661">
@@ -44,10 +44,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Polls"
-            android:layout_marginLeft="80dp"
+            android:text="Survey Form"
+            android:layout_marginLeft="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
+            android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/toolbar1"/>
         </LinearLayout>
@@ -57,19 +58,173 @@
             android:layout_gravity="center"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:text="Your opinion is import for us!"
+            android:layout_marginTop="30dp"
+            android:text="Please fill this survey form"
             android:textColor="@color/black"
 
             />
-            <ImageView
-                android:id="@+id/img_att"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_gravity="center"
 
-                android:src="@drawable/voting"
-               />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/q1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+android:background="@drawable/new_register_edit_text"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/t1"
+                    android:padding="10dp"
+                    android:textColorHint="#60000000"
+                    android:hint="Write here..."
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 2"
+                    android:textSize="20sp"
+                    android:id="@+id/q2"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/t2"
+                    android:hint="Write here..."
+                    android:padding="10dp"
+                    android:background="@drawable/new_register_edit_text"
+                    android:textColorHint="#60000000"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 3"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/q3"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/new_register_edit_text"
+                    android:hint="Write here..."
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#60000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 4"
+
+                    android:textSize="20sp"
+                    android:id="@+id/q4"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiogroup">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="one"
+                        android:id="@+id/radio1"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="two"
+                        android:id="@+id/radio2"
+                        android:textColor="@color/black"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="three"
+                        android:id="@+id/radio3"
+                        android:textColor="@color/black"/>
+
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 5"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="four"
+                        android:id="@+id/radio4"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="five"
+                        android:id="@+id/radio5"
+                        android:textColor="@color/black"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="six"
+                        android:id="@+id/radio6"
+                        android:textColor="@color/black"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:text="Question 6"
+                android:id="@+id/q6"
+                android:textColor="@color/black"
+
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -181,11 +336,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Vote"
-android:id="@+id/vote"
+                android:text="Send"
+android:id="@+id/send_form"
                 android:background="@drawable/button_background"
                 app:backgroundTint="#448E47"
                 android:layout_marginTop="30dp"/>
         </LinearLayout>
+
+
     </androidx.cardview.widget.CardView>
 </ScrollView>
