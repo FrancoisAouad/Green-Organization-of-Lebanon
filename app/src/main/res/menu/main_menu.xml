@@ -34,7 +34,7 @@ android:title="Profile"
                 <item
                     android:id="@+id/poll"
                     android:title="Polls"
-                    android:icon="@drawable/ic_activities_icon"
+                    android:icon="@drawable/ic_baseline_poll_24"
                     >
 
 
@@ -42,7 +42,7 @@ android:title="Profile"
                 <item
                     android:id="@+id/calendar"
                     android:title="Calendar"
-                    android:icon="@drawable/ic_activities_icon"
+                    android:icon="@drawable/ic_baseline_calendar_today_24"
                     >
 
                 </item>

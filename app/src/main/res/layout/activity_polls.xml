@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pollsActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#7bb661">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/pollsBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                    app:backgroundTint="#448E47" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Polls"
+                    android:layout_marginLeft="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/toolbar1"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/voting"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 1"
+
+                    android:textSize="20sp"
+                    android:id="@+id/qu1"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiogroup2">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="one"
+                        android:id="@+id/polls1"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="two"
+                        android:id="@+id/polls2"
+                        android:textColor="@color/black"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="three"
+                        android:id="@+id/polls3"
+                        android:textColor="@color/black"/>
+
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 2"
+
+                    android:textSize="20sp"
+                    android:id="@+id/qu2"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiogroup3">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="one"
+                        android:id="@+id/polls4"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="two"
+                        android:id="@+id/polls5"
+                        android:textColor="@color/black"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="three"
+                        android:id="@+id/polls6"
+                        android:textColor="@color/black"/>
+
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 3"
+
+                    android:textSize="20sp"
+                    android:id="@+id/qu3"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiogroup4">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="one"
+                        android:id="@+id/polls7"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="two"
+                        android:id="@+id/polls8"
+                        android:textColor="@color/black"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="three"
+                        android:id="@+id/polls9"
+                        android:textColor="@color/black"/>
+
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Question 4"
+
+                    android:textSize="20sp"
+                    android:id="@+id/qu4"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiogroup5">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="one"
+                        android:id="@+id/polls10"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="two"
+                        android:id="@+id/polls11"
+                        android:textColor="@color/black"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="three"
+                        android:id="@+id/polls12"
+                        android:textColor="@color/black"/>
+
+                </RadioGroup>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Vote"
+                android:id="@+id/send_poll"
+                android:background="@drawable/button_background"
+                app:backgroundTint="#448E47"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

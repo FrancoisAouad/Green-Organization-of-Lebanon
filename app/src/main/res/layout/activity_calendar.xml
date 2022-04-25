@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calendarActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#7bb661">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/calendar_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                    app:backgroundTint="#448E47" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calendar"
+                    android:layout_marginLeft="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/toolbar1"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/calendar_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MM-YYYY"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+  android:src="@drawable/calendar"
+                android:id="@+id/calendarimg"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

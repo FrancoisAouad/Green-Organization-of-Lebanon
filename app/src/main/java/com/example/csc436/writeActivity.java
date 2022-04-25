@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -85,6 +86,12 @@ public class writeActivity extends AppCompatActivity {
                 userRef = FirebaseDatabase.getInstance().getReference().child("users").child(current_user);
                 // String current_user = mauth.getCurrentUser().getUid();
 
+
+
+                if (TextUtils.isEmpty(post)) {
+                    write_text.setError("Text Box empty");
+                    return;
+                }
 userRef.addValueEventListener(new ValueEventListener() {
     @Override
     public void onDataChange(@NonNull  DataSnapshot snapshot) {

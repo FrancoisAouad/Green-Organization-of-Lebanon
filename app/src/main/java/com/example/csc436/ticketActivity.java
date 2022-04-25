@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -93,9 +94,22 @@ Uri uri;
            @Override
            public void onClick(View v) {
 
+               final String desc = ticketB.getText().toString().trim();
+               final String ccity = city.getText().toString().trim();
+               final String sstreet = street.getText().toString().trim();
 
-
-
+               if (TextUtils.isEmpty(desc)) {
+                   ticketB.setError("Text box empty");
+                   return;
+               }
+               if (TextUtils.isEmpty(ccity)) {
+                   city.setError("Must select city");
+                   return;
+               }
+               if (TextUtils.isEmpty(sstreet)) {
+                   street.setError("Must select street ");
+                   return;
+               }
 
                String c_user=tauth.getCurrentUser().getUid();
                ticketRef = FirebaseDatabase.getInstance().getReference().child("tickets").child(c_user);

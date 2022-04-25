@@ -28,35 +28,441 @@
 
 
 
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white">
-
-<androidx.recyclerview.widget.RecyclerView
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/post_list"
-    android:foregroundGravity="center">
+
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:orientation="vertical"
+
+
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:elevation="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:src="@drawable/myprofileimg"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:text="francoisaouad"
+                       android:layout_marginLeft="20dp"
+                       android:textStyle="bold"
+                       android:padding="10dp"
+                       android:textSize="18sp"
+                       android:textColor="@color/black"/>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="20dp"
+                            android:text="24-4-2022   22:38"
+                            android:textColor="#9E000000" />
 
 
 
-</androidx.recyclerview.widget.RecyclerView>
 
 
 
-    </RelativeLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recyclerview">
 
-    </androidx.recyclerview.widget.RecyclerView>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_marginTop="80dp"
+    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:elevation="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:src="@drawable/myprofileimg"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="francoisaouad"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"/>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="20dp"
+                            android:text="24-4-2022   22:38"
+                            android:textColor="#9E000000" />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:elevation="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:src="@drawable/myprofileimg"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="francoisaouad"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"/>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="20dp"
+                            android:text="24-4-2022   22:38"
+                            android:textColor="#9E000000" />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:elevation="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:src="@drawable/myprofileimg"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="francoisaouad"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"/>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="20dp"
+                            android:text="24-4-2022   22:38"
+                            android:textColor="#9E000000" />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:elevation="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:src="@drawable/myprofileimg"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="francoisaouad"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"/>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="20dp"
+                            android:text="24-4-2022   22:38"
+                            android:textColor="#9E000000" />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:elevation="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:src="@drawable/myprofileimg"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="francoisaouad"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"/>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="20dp"
+                            android:text="24-4-2022   22:38"
+                            android:textColor="#9E000000" />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
 
 
 

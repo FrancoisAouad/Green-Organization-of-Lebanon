@@ -15,7 +15,9 @@
         android:roundIcon="@mipmap/ic_gologo2_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSC436">
-        <activity android:name=".surveyActivity"></activity>
+        <activity android:name=".calendarActivity"/>
+        <activity android:name=".pollsActivity" />
+        <activity android:name=".surveyActivity" />
         <activity android:name=".writeActivity" />
         <activity android:name=".ticketActivity" />
         <activity android:name=".aboutActivity" />

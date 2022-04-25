@@ -243,7 +243,14 @@ recyView.setAdapter(adapter);
                 Intent intent5=new Intent(mainActivity.this, surveyActivity.class);
                 startActivity(intent5);
                 break;
-
+            case R.id.poll:
+                Intent intent6=new Intent(mainActivity.this, pollsActivity.class);
+                startActivity(intent6);
+                break;
+            case R.id.calendar:
+                Intent intent7=new Intent(mainActivity.this, calendarActivity.class);
+                startActivity(intent7);
+                break;
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);

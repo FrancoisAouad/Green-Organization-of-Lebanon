@@ -3,6 +3,7 @@ package com.example.csc436;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -22,20 +23,20 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import org.jetbrains.annotations.NotNull;
+
 
 import java.util.HashMap;
 
 public class surveyActivity extends AppCompatActivity {
 
 
-    RadioGroup radioGroup;
+    RadioGroup radioGroup, rd;
     CheckBox c1, c2, c3, c4, c5;
     Button vote_form, back_poll;
     DatabaseReference qref, userRef, voteref;
     TextView option1, option2, option3, option4, option5;
     FirebaseAuth uau;
-    TextView q1, q2, q3, q4, q5;
+    TextView q1, q2, q3, q4, q5, q6;
     EditText t1, t2, t3;
     RadioButton radio1, radio2, radio3, radio4, radio5, radio6;
 
@@ -43,12 +44,15 @@ public class surveyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poll);
+
         radioGroup=findViewById(R.id.radiogroup);
+        rd=findViewById(R.id.rd);
         q1=findViewById(R.id.q1);
         q2=findViewById(R.id.q2);
         q3=findViewById(R.id.q3);
         q4=findViewById(R.id.q4);
         q5=findViewById(R.id.q5);
+        q6=findViewById(R.id.q6);
 
         t1=findViewById(R.id.t1);
         t2=findViewById(R.id.t2);
@@ -84,6 +88,7 @@ public class surveyActivity extends AppCompatActivity {
 
 
 vote_form.setOnClickListener(new View.OnClickListener() {
+    @SuppressLint("ResourceType")
     @Override
     public void onClick(View v) {
         final String ans1 = t1.getText().toString().trim();
@@ -103,237 +108,187 @@ vote_form.setOnClickListener(new View.OnClickListener() {
             t3.setError("Answer is required");
             return;
         }
+        if (radioGroup.getCheckedRadioButtonId() <= 0) {//Grp is your radio group object
+            radio3.setError("Select Item");//Set error to last Radio button
+
+        }
+        if (rd.getCheckedRadioButtonId() <= 0) {//Grp is your radio group object
+            radio6.setError("Select Item");//Set error to last Radio button
+        }else{
 
 
+        userRef = FirebaseDatabase.getInstance().getReference().child("users");
+        userRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull  DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+                    //     final String ans1 = t1.getText().toString().trim();
+                    //     final String ans2 = t2.getText().toString().trim();
+                    //    final String ans3 = t3.getText().toString().trim();
+
+                    // String full_name3 = snapshot.child("fullname").getValue().toString();
+                    //String user_name3 = snapshot.child("username").getValue().toString();
+                    //String profile_p3 = snapshot.child("profileimage").getValue().toString();
+                    // String phone_number3=snapshot.child("phone").getValue().toString();
+                    //String email3=snapshot.child("email").getValue().toString();
+                    String currruser = uau.getCurrentUser().getUid();
 
 
-        userRef= FirebaseDatabase.getInstance().getReference().child("users");
-   userRef.addValueEventListener(new ValueEventListener() {
-       @Override
-       public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-          if(snapshot.exists()){
-         //     final String ans1 = t1.getText().toString().trim();
-         //     final String ans2 = t2.getText().toString().trim();
-          //    final String ans3 = t3.getText().toString().trim();
+                    String soption1 = " ";
+                    String soption2 = " ";
+                    String soption3 = " ";
+                    String soption4 = " ";
+                    String soption5 = " ";
 
-          // String full_name3 = snapshot.child("fullname").getValue().toString();
-           //String user_name3 = snapshot.child("username").getValue().toString();
-           //String profile_p3 = snapshot.child("profileimage").getValue().toString();
-          // String phone_number3=snapshot.child("phone").getValue().toString();
-           //String email3=snapshot.child("email").getValue().toString();
-           String currruser=uau.getCurrentUser().getUid();
+                    if (c1.isChecked()) {
+                        soption1 = "checked";
+
+                    } else if (!c1.isChecked()) {
+                        soption1 = "not checked";
+                    }
 
 
+                    if (c2.isChecked()) {
+                        //soption2=soption2+"option2";
+                        soption2 = "checked";
+                    } else if (!c2.isChecked()) {
+                        soption2 = "not checked";
+                    }
 
 
-           String soption1=" ";
-           String soption2=" ";
-           String soption3=" ";
-           String soption4=" ";
-           String soption5=" ";
-
-           if(c1.isChecked()){
-               soption1 ="checked";
-
-           }else if(!c1.isChecked()){
-               soption1 ="not checked";
-           }
+                    if (c3.isChecked()) {
+                        //soption3=soption3+"option3";
+                        soption3 = "checked";
+                    } else if (!c3.isChecked()) {
+                        soption3 = "not checked";
+                    }
 
 
-           if(c2.isChecked()){
-               //soption2=soption2+"option2";
-                soption2="checked";
-           }else if(!c2.isChecked()){
-               soption2="not checked";
-           }
+                    if (c4.isChecked()) {
+                        //soption4=soption4+"option4";
+                        soption4 = "checked";
+                    } else if (!c4.isChecked()) {
+                        soption4 = "not checked";
+                    }
 
 
-           if(c3.isChecked()){
-               //soption3=soption3+"option3";
-               soption3="checked";
-           }else if(!c3.isChecked()){
-               soption3="not checked";
-           }
+                    if (c5.isChecked()) {
+                        // soption5=soption5+"option5";
+                        soption5 = "checked";
 
-
-           if(c4.isChecked()){
-               //soption4=soption4+"option4";
-               soption4="checked";
-           }else if(!c4.isChecked()){
-                soption4="not checked";
-           }
-
-
-           if(c5.isChecked()){
-               // soption5=soption5+"option5";
-                soption5="checked";
-
-           }else if(!c5.isChecked()){
-                soption5="not checked";
-           }
+                    } else if (!c5.isChecked()) {
+                        soption5 = "not checked";
+                    }
 //------------------radio buttons
-              String sradio1=" ";
-              String sradio2=" ";
-              String sradio3=" ";
-              String sradio4=" ";
-              String sradio5=" ";
-              String sradio6=" ";
+                    String sradio1 = " ";
+                    String sradio2 = " ";
+                    String sradio3 = " ";
+                    String sradio4 = " ";
+                    String sradio5 = " ";
+                    String sradio6 = " ";
 
-              if(radio1.isChecked()){
-                  sradio1 ="selected";
+                    if (radio1.isChecked()) {
+                        sradio1 = "selected";
 
-              }else if(!radio1.isChecked()){
-                  sradio1 ="not selected";
-              }
-
-
-              if(radio2.isChecked()){
-                  sradio2 ="selected";
-
-              }else if(!radio2.isChecked()){
-                  sradio2 ="not selected";
-              }
+                    } else if (!radio1.isChecked()) {
+                        sradio1 = "not selected";
+                    }
 
 
-              if(radio3.isChecked()){
-                  sradio3 ="selected";
+                    if (radio2.isChecked()) {
+                        sradio2 = "selected";
 
-              }else if(!radio3.isChecked()){
-                  sradio3 ="not selected";
-              }
-
-
-              if(radio4.isChecked()){
-                  sradio4 ="selected";
-
-              }else if(!radio4.isChecked()){
-                  sradio4 ="not selected";
-              }
+                    } else if (!radio2.isChecked()) {
+                        sradio2 = "not selected";
+                    }
 
 
-              if(radio5.isChecked()){
-                  sradio5 ="selected";
+                    if (radio3.isChecked()) {
+                        sradio3 = "selected";
 
-              }else if(!radio5.isChecked()){
-                  sradio5 ="not selected";
-              }
-
-
-              if(radio6.isChecked()){
-                  sradio6 ="selected";
-
-              }else if(!radio6.isChecked()){
-                  sradio6 ="not selected";
-              }
-
-           HashMap votesmap=new HashMap();
-
-          // votesmap.put("fullname",full_name3 );
-          // votesmap.put("fullname",user_name3 );
-          // votesmap.put("fullname",phone_number3 );
-          // votesmap.put("fullname",email3);
-           votesmap.put("id",currruser );
-
-           votesmap.put("question1",ans1 );
-           votesmap.put("question2",ans2);
-           votesmap.put("question3",ans3 );
-
-           votesmap.put("options1", soption1);
-           votesmap.put("options2", soption2 );
-           votesmap.put("options3",soption3 );
-           votesmap.put("options4",soption4);
-           votesmap.put("options5",soption5 );
-
-           votesmap.put("radio1",sradio1 );
-           votesmap.put("radio2",sradio2 );
-           votesmap.put("radio3",sradio3 );
-           votesmap.put("radio4",sradio4 );
-           votesmap.put("radio5",sradio5 );
-           votesmap.put("radio6",sradio6 );
+                    } else if (!radio3.isChecked()) {
+                        sradio3 = "not selected";
+                    }
 
 
+                    if (radio4.isChecked()) {
+                        sradio4 = "selected";
 
-voteref.child("surveyresponses").push().setValue(votesmap).addOnCompleteListener(task -> {
-
-
-    if (task.isSuccessful()) {
-
-
-        Toast.makeText(surveyActivity.this, "Your form has been successfully sent!", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(surveyActivity.this, mainActivity.class);
-        startActivity(intent);
-        finish();
-
-    } else {
-
-        Toast.makeText(surveyActivity.this, "error", Toast.LENGTH_SHORT).show();
-    }
+                    } else if (!radio4.isChecked()) {
+                        sradio4 = "not selected";
+                    }
 
 
+                    if (radio5.isChecked()) {
+                        sradio5 = "selected";
 
-           });
-
-       }
-
-
-
-
+                    } else if (!radio5.isChecked()) {
+                        sradio5 = "not selected";
+                    }
 
 
+                    if (radio6.isChecked()) {
+                        sradio6 = "selected";
+
+                    } else if (!radio6.isChecked()) {
+                        sradio6 = "not selected";
+                    }
+
+                    HashMap votesmap = new HashMap();
+
+                    // votesmap.put("fullname",full_name3 );
+                    // votesmap.put("fullname",user_name3 );
+                    // votesmap.put("fullname",phone_number3 );
+                    // votesmap.put("fullname",email3);
+                    votesmap.put("id", currruser);
+
+                    votesmap.put("question1", ans1);
+                    votesmap.put("question2", ans2);
+                    votesmap.put("question3", ans3);
+
+                    votesmap.put("options1", soption1);
+                    votesmap.put("options2", soption2);
+                    votesmap.put("options3", soption3);
+                    votesmap.put("options4", soption4);
+                    votesmap.put("options5", soption5);
+
+                    votesmap.put("radio1", sradio1);
+                    votesmap.put("radio2", sradio2);
+                    votesmap.put("radio3", sradio3);
+                    votesmap.put("radio4", sradio4);
+                    votesmap.put("radio5", sradio5);
+                    votesmap.put("radio6", sradio6);
 
 
+                    voteref.child("surveyresponses").push().setValue(votesmap).addOnCompleteListener(task -> {
 
 
+                        if (task.isSuccessful()) {
 
 
+                            Toast.makeText(surveyActivity.this, "Your form has been successfully sent!", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(surveyActivity.this, mainActivity.class);
+                            startActivity(intent);
+                            finish();
 
+                        } else {
 
+                            Toast.makeText(surveyActivity.this, "error", Toast.LENGTH_SHORT).show();
+                        }
 
+                    });
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull  DatabaseError error) {
+
+            }
+        });
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @Override
-    public void onCancelled(@NonNull @NotNull DatabaseError error) {
-
-    }
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 });
 
@@ -359,7 +314,7 @@ voteref.child("surveyresponses").push().setValue(votesmap).addOnCompleteListener
 
        qref.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+            public void onDataChange(@NonNull  DataSnapshot snapshot) {
 
                 if(snapshot.exists()){
 
@@ -369,12 +324,13 @@ voteref.child("surveyresponses").push().setValue(votesmap).addOnCompleteListener
                     option4.setText(snapshot.child("options4").getValue().toString());
                     option5.setText(snapshot.child("options5").getValue().toString());
 
+
                     q1.setText(snapshot.child("question1").getValue().toString());
                     q2.setText(snapshot.child("question2").getValue().toString());
                     q3.setText(snapshot.child("question3").getValue().toString());
                     q4.setText(snapshot.child("question4").getValue().toString());
                     q5.setText(snapshot.child("question5").getValue().toString());
-                    q5.setText(snapshot.child("question6").getValue().toString());
+                    q6.setText(snapshot.child("question6").getValue().toString());
 
                     radio1.setText(snapshot.child("radio1").getValue().toString());
                     radio2.setText(snapshot.child("radio2").getValue().toString());
@@ -391,7 +347,7 @@ voteref.child("surveyresponses").push().setValue(votesmap).addOnCompleteListener
             }
 
             @Override
-            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });

@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".surveyActivity"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="10dp"
     android:background="#7bb661">
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="#fff"
         android:elevation="10dp"
         app:cardBackgroundColor="#FFFFFF"
@@ -187,7 +187,8 @@ android:background="@drawable/new_register_edit_text"
 
                 <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rd">
 
                     <RadioButton
                         android:layout_width="match_parent"
@@ -214,8 +215,8 @@ android:background="@drawable/new_register_edit_text"
             </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -233,7 +234,7 @@ android:background="@drawable/new_register_edit_text"
         <TextView
             android:id="@+id/option1"
             android:layout_width="wrap_content"
-            android:layout_marginLeft="30dp"
+
             android:layout_height="match_parent"
             android:layout_gravity="left"
             android:hint="Options 1"
@@ -244,18 +245,19 @@ android:background="@drawable/new_register_edit_text"
                     android:id="@+id/c1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="10dp"
                     android:textColorHighlight="#4CAF50" />
 
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
                 <TextView
                     android:id="@+id/option2"
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="30dp"
+
                     android:layout_height="match_parent"
                     android:layout_gravity="left"
                     android:hint="Options 1"
@@ -266,17 +268,18 @@ android:background="@drawable/new_register_edit_text"
                     android:id="@+id/c2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="10dp"
                     android:textColorHighlight="#4CAF50" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
                 <TextView
                     android:id="@+id/option3"
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="30dp"
+
                     android:layout_height="match_parent"
                     android:layout_gravity="left"
                     android:hint="Options 1"
@@ -287,17 +290,18 @@ android:background="@drawable/new_register_edit_text"
                     android:id="@+id/c3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="10dp"
                     android:textColorHighlight="#4CAF50" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
                 <TextView
                     android:id="@+id/option4"
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="30dp"
+
                     android:layout_height="match_parent"
                     android:layout_gravity="left"
                     android:hint="Options 1"
@@ -308,17 +312,18 @@ android:background="@drawable/new_register_edit_text"
                     android:id="@+id/c4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="10dp"
                     android:textColorHighlight="#4CAF50" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
                 <TextView
                     android:id="@+id/option5"
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="30dp"
+
                     android:layout_height="match_parent"
                     android:layout_gravity="left"
                     android:hint="Options 1"
@@ -329,7 +334,7 @@ android:background="@drawable/new_register_edit_text"
                     android:id="@+id/c5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="10dp"
                     android:textColorHighlight="#4CAF50" />
             </LinearLayout>
             <Button
@@ -337,7 +342,7 @@ android:background="@drawable/new_register_edit_text"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Send"
-android:id="@+id/send_form"
+                android:id="@+id/send_form"
                 android:background="@drawable/button_background"
                 app:backgroundTint="#448E47"
                 android:layout_marginTop="30dp"/>
