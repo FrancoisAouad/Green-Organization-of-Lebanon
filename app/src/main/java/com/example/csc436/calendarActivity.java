@@ -53,15 +53,15 @@ dateRef.addValueEventListener(new ValueEventListener() {
     public void onDataChange(@NonNull  DataSnapshot snapshot) {
         if(snapshot.exists()){
 
-            if(snapshot.hasChild("calendarurl")) {
+          //  if(snapshot.hasChild("calendarurl")) {
 
-                Glide.with(getApplicationContext()).load(snapshot.child("calendarurl").getValue().toString()).into(calendarimg);
-            }else{
+           //     Glide.with(getApplicationContext()).load(snapshot.child("calendarurl").getValue().toString()).into(calendarimg);
+          //  }else{
 
-                calendarimg.setImageResource(R.drawable.default_userimg);
-            }
+            //    calendarimg.setImageResource(R.drawable.default_userimg);
+          //  }
 
-            datec.setText(snapshot.child("calendardate").getValue().toString());
+          datec.setText(snapshot.child("calendardate").getValue().toString());
 
         }
 
