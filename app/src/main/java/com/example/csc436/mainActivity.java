@@ -247,6 +247,10 @@ recyView.setAdapter(adapter);
                 Intent intent6=new Intent(mainActivity.this, pollsActivity.class);
                 startActivity(intent6);
                 break;
+            case R.id.posts:
+                Intent intent8=new Intent(mainActivity.this, myPostsActivity.class);
+                startActivity(intent8);
+                break;
             case R.id.calendar:
                 Intent intent7=new Intent(mainActivity.this, calendarActivity.class);
                 startActivity(intent7);

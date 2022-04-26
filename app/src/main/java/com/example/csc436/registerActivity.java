@@ -37,6 +37,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class registerActivity extends AppCompatActivity {
 
     Button back_button, register_button;
@@ -45,7 +47,7 @@ public class registerActivity extends AppCompatActivity {
     ProgressDialog loader;
     FirebaseAuth uAuth;
     DatabaseReference dataRef;
-    ImageView register_userimg;
+    CircleImageView register_userimg;
     Uri resulturi;
 
     @Override

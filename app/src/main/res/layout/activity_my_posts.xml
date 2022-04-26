@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7bb661"
     tools:context=".myPostsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        >
+        <Button
+            android:id="@+id/myposts_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+
+            android:layout_marginLeft="5dp"
+            app:backgroundTint="#FAF6F7"
+            />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:src="@drawable/myprofileimg"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="francoisaouad"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:text="27-4-2022   17:21"
+                    android:textColor="#9E000000" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="80dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:text="Hello world!"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

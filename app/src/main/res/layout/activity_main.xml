@@ -62,7 +62,7 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
 
-                    android:src="@drawable/myprofileimg"/>
+                    android:src="@drawable/gallard"/>
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -70,7 +70,7 @@
                    <TextView
                        android:layout_width="match_parent"
                        android:layout_height="40dp"
-                       android:text="francoisaouad"
+                       android:text="GerritBallard"
                        android:layout_marginLeft="20dp"
                        android:textStyle="bold"
                        android:padding="10dp"
@@ -85,7 +85,7 @@
                             android:padding="10dp"
                             android:textSize="12sp"
                             android:layout_marginLeft="20dp"
-                            android:text="24-4-2022   22:38"
+                            android:text="25-April-2022   10:55"
                             android:textColor="#9E000000" />
 
 
@@ -103,7 +103,9 @@
     android:layout_width="match_parent"
     android:layout_height="210dp"
     android:layout_marginTop="80dp"
-    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:text="hopefully everyone can do theur part in order to make the world a better place"
     android:textColor="@color/black"
     android:textSize="18sp"
     />
@@ -130,7 +132,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
 
-                        android:src="@drawable/myprofileimg"/>
+                        android:src="@drawable/gallard"/>
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
@@ -138,7 +140,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="francoisaouad"
+                            android:text="GerritBallard"
                             android:layout_marginLeft="20dp"
                             android:textStyle="bold"
                             android:padding="10dp"
@@ -153,7 +155,7 @@
                             android:padding="10dp"
                             android:textSize="12sp"
                             android:layout_marginLeft="20dp"
-                            android:text="24-4-2022   22:38"
+                            android:text="25-April-2022   10:54"
                             android:textColor="#9E000000" />
 
 
@@ -171,7 +173,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_marginTop="80dp"
-                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:text="Today i went with a couple of lads on the beach in order to clean it as much as possible"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     />
@@ -197,7 +201,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
 
-                        android:src="@drawable/myprofileimg"/>
+                        android:src="@drawable/jessica"/>
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
@@ -205,7 +209,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="francoisaouad"
+                            android:text="jessicaB"
                             android:layout_marginLeft="20dp"
                             android:textStyle="bold"
                             android:padding="10dp"
@@ -220,7 +224,7 @@
                             android:padding="10dp"
                             android:textSize="12sp"
                             android:layout_marginLeft="20dp"
-                            android:text="24-4-2022   22:38"
+                            android:text="24-April-2022   13:03"
                             android:textColor="#9E000000" />
 
 
@@ -238,7 +242,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_marginTop="80dp"
-                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Please do not forget to follow us for more update on twitter @GreenOrgLeb"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     />
@@ -264,7 +270,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
 
-                        android:src="@drawable/myprofileimg"/>
+                        android:src="@drawable/joe"/>
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
@@ -272,7 +278,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="francoisaouad"
+                            android:text="carlosmorgan"
                             android:layout_marginLeft="20dp"
                             android:textStyle="bold"
                             android:padding="10dp"
@@ -287,7 +293,7 @@
                             android:padding="10dp"
                             android:textSize="12sp"
                             android:layout_marginLeft="20dp"
-                            android:text="24-4-2022   22:38"
+                            android:text="23-April-2022   16:38"
                             android:textColor="#9E000000" />
 
 
@@ -304,8 +310,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
                     android:layout_marginTop="80dp"
-                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:text="Thankfully we were able to raid a warehouse selling expired food today. The authoroties then pledged to take the people violting health protocols to court."
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     />
@@ -331,7 +339,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
 
-                        android:src="@drawable/myprofileimg"/>
+                        android:src="@drawable/michael"/>
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
@@ -339,7 +347,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="francoisaouad"
+                            android:text="michaelYoung1"
                             android:layout_marginLeft="20dp"
                             android:textStyle="bold"
                             android:padding="10dp"
@@ -354,7 +362,7 @@
                             android:padding="10dp"
                             android:textSize="12sp"
                             android:layout_marginLeft="20dp"
-                            android:text="24-4-2022   22:38"
+                            android:text="22-April-2022   12:13"
                             android:textColor="#9E000000" />
 
 
@@ -372,79 +380,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_marginTop="80dp"
-                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:text="I am pleased to announce the completion of our awareness program on the importance of climate change."
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     />
 
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="280dp"
-                android:layout_marginTop="20dp"
-                android:background="#fff"
-                android:elevation="10dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp">
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
 
-                        android:src="@drawable/myprofileimg"/>
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:text="francoisaouad"
-                            android:layout_marginLeft="20dp"
-                            android:textStyle="bold"
-                            android:padding="10dp"
-                            android:textSize="18sp"
-                            android:textColor="@color/black"/>
-
-
-                        <TextView
-
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:padding="10dp"
-                            android:textSize="12sp"
-                            android:layout_marginLeft="20dp"
-                            android:text="24-4-2022   22:38"
-                            android:textColor="#9E000000" />
-
-
-
-
-
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:layout_marginTop="80dp"
-                    android:text="Hello world, this message is a test in order to test the functionalities of this feature"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    />
-
-            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
 
