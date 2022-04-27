@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".aboutActivity"
     android:orientation="vertical"
-    android:padding="20dp"
+
     android:background="#7bb661">
 
 
@@ -40,12 +40,12 @@
                 />
 
             <ImageView
-                android:id="@+id/imageView"
+
                 android:layout_width="113dp"
                 android:layout_height="106dp"
-                android:src="@drawable/usek_logo"
+                android:src="@drawable/usek"
                 android:layout_gravity="center"
-                tools:srcCompat="@drawable/usek" />
+                />
 
             <TextView
                 android:id="@+id/textView"
@@ -79,10 +79,7 @@
                 android:text="This Application was created in order to allow those who have a keen interest in protecting the environment to be able to have a common platform. This will them to be able to interact much more efficiently, and have a centralized way of interaction, and coordination of action"
                 android:textColor="#121212"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                 />
 
 
             <LinearLayout

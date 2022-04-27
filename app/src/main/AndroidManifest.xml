@@ -11,11 +11,10 @@
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_gologo2"
         android:label="@string/app_name"
-        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_gologo2_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSC436">
-        <activity android:name=".myPostsActivity"></activity>
+        <activity android:name=".myPostsActivity"/>
         <activity android:name=".calendarActivity" />
         <activity android:name=".pollsActivity" />
         <activity android:name=".surveyActivity" />

@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".aboutActivity"
+
     android:orientation="vertical"
-    android:padding="10dp"
+android:padding="20dp"
     android:background="#7bb661">
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="#fff"
         android:elevation="10dp"
         app:cardBackgroundColor="#FFFFFF"
@@ -28,24 +28,23 @@
             android:orientation="vertical"
 
             >
-    <Button
-        android:id="@+id/backabout"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/ic_baseline_arrow_back_ios_24"
-
-android:layout_marginLeft="5dp"
-        app:backgroundTint="#8BC34A"
-         />
+            <Button
+                android:id="@+id/backabout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                app:backgroundTint="#448E47" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="113dp"
         android:layout_height="106dp"
-        android:src="@drawable/usek_logo"
+        android:src="@drawable/usek"
         android:layout_gravity="center"
-        tools:srcCompat="@drawable/usek" />
+         />
 
     <TextView
         android:id="@+id/textView"
@@ -79,10 +78,7 @@ android:layout_marginLeft="5dp"
         android:text="This Application was created in order to allow those who have a keen interest in protecting the environment to be able to have a common platform. This will them to be able to interact much more efficiently, and have a centralized way of interaction, and coordination of action"
         android:textColor="#121212"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+      />
 
 
             <LinearLayout
@@ -105,17 +101,16 @@ android:layout_marginLeft="5dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-
-                    android:src="@drawable/twitter_logo" />
+                    android:src="@drawable/twitter1" />
 
                 <ImageView
                     android:id="@+id/insta"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-
-android:layout_marginLeft="10dp"
-                    android:src="@drawable/insta_logo" />
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/insta1" />
             </LinearLayout>
+
 </LinearLayout>
 
 

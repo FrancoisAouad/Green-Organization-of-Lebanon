@@ -53,11 +53,7 @@
                     android:textSize="20sp"
                     android:textColor="@color/toolbar1"/>
             </LinearLayout>
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:src="@drawable/voting"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
